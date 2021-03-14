@@ -1,4 +1,4 @@
-name: CI
+name: Test plan
 
 on:
   push:
@@ -11,3 +11,5 @@ jobs:
       - uses: ./
         env:
           HELMWAVE_TAGS: "test"
+        with:
+          arg: plan

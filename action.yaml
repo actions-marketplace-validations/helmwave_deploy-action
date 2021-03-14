@@ -1,5 +1,21 @@
 name: 'HelmWave'
-description: 'Deploy your helmwave.yml'
+description: 'Deploy with helmwave'
 runs:
   using: 'docker'
-  image: 'docker://diamon/helmwave:0.9.2'
+  inputs:
+    version:
+      description: 'helmwave version'
+      required: false
+      default: 'latest'
+    arg:
+      description: 'helmwave first arg'
+      required: false
+      default: 'deploy'
+    image:
+      description: 'helmwave image'
+      required: false
+      default: 'diamon/helmwave'
+
+  image: 'docker://'${{ inputs.image }}':'${{ inputs.version }}
+  args:
+    - ${{ inputs.arg }}
