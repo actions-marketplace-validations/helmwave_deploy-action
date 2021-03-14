@@ -15,6 +15,6 @@ inputs:
       default: 'deploy'
 runs:
   using: 'docker'
-  image: "docker://${{ inputs.image }}:${{ inputs.version }}"
+  image: "docker://"${{ inputs.image }}":"${{ inputs.version }}
   args:
     - ${{ inputs.arg }}
