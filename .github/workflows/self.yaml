@@ -7,7 +7,7 @@ jobs:
   helmwave:
     runs-on: ubuntu-latest
     steps:
-      - name: test helmwave
-        uses: ./action.yaml
+      - uses: actions/checkout@v2
+      - uses: ./
         env:
           HELMWAVE_TAGS: "test"
