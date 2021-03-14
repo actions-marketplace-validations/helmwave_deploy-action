@@ -12,4 +12,4 @@ jobs:
         env:
           HELMWAVE_TAGS: "test"
         with:
-          arg: plan
+          arg: help
