@@ -16,6 +16,6 @@ runs:
       required: false
       default: 'diamon/helmwave'
 
-  image: 'docker://'${{ inputs.image }}':'${{ inputs.version }}
+  image: 'docker://'${{ inputs.image.value }}':'${{ inputs.version.value }}
   args:
-    - ${{ inputs.arg }}
+    - ${{ inputs.arg.value }}
