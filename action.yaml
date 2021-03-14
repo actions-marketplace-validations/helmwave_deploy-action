@@ -1,20 +1,20 @@
 name: 'HelmWave'
 description: 'Deploy with helmwave'
 inputs:
-    version:
-      description: 'helmwave version'
-      required: false
-      default: 'latest'
-    image:
-      description: 'helmwave image'
-      required: false
-      default: 'diamon/helmwave'
+#    version:
+#      description: 'helmwave version'
+#      required: false
+#      default: 'latest'
+#    image:
+#      description: 'helmwave image'
+#      required: false
+#      default: 'diamon/helmwave'
     arg:
       description: 'helmwave first arg'
       required: false
       default: 'deploy'
 runs:
   using: 'docker'
-  image: "docker://"${{ inputs.image }}":"${{ inputs.version }}
+  image: "docker://diamon/helmwave:latest"
   args:
     - ${{ inputs.arg }}
