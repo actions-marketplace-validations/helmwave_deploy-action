@@ -2,7 +2,7 @@ name: 'HelmWave'
 description: 'Deploy with helmwave'
 author: 'Dmitriy Zhilyaev'
 branding:
-  icon: 'hexagon'
+  icon: 'play-circle'
   color: 'blue'
 inputs:
 #    version:
