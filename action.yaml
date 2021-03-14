@@ -1,4 +1,4 @@
-name: 'Helmwave'
+name: 'HelmWave'
 description: 'Deploy your helmwave.yml'
 runs:
   using: 'docker'
