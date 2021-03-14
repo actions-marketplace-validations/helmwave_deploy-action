@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: helmwave/deploy-action@latest
+    env:
+      HELMWAVE_TAGS: "test"
