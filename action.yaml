@@ -1,5 +1,6 @@
 name: 'HelmWave'
 description: 'Deploy with helmwave'
+author: 'Dmitriy Zhilyaev'
 inputs:
 #    version:
 #      description: 'helmwave version'
@@ -15,6 +16,9 @@ inputs:
       default: 'deploy'
 runs:
   using: 'docker'
-  image: "docker://diamon/helmwave:latest"
+  image: 'docker://diamon/helmwave:latest'
   args:
     - ${{ inputs.arg }}
+  branding:
+    icon: 'hexagon'
+    color: 'blue'
