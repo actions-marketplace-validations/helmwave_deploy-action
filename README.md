@@ -2,6 +2,8 @@
 
 :octocat: GitHub Action for helmwave 
 
+> This is archived. Please use https://github.com/helmwave/setup-action 
+
 ## Usage
 
 *Workflow*
